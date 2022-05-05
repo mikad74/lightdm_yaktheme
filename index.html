@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+  ~
+  ~ Copyright © 2015-2016 Antergos
+  ~
+  ~ index.html
+  ~
+  ~ This file is part of lightdm-webkit2-greeter
+  ~
+  ~ lightdm-webkit2-greeter is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License,
+  ~ or any later version.
+  ~
+  ~ lightdm-webkit2-greeter is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ The following additional terms are in effect as per Section 7 of the license:
+  ~
+  ~ The preservation of all legal notices and author attributions in
+  ~ the material or in the Appropriate Legal Notices displayed
+  ~ by works containing it is required.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LightDM Webkit2 Greeter</title>
+	<meta name="description" content="Theme: antergos">
+	<meta name="author" content="Dustin Falgout">
+
+	<!--For testing the theme in a web browser -->
+	<!--<script type="text/javascript" src="../_vendor/js/mock.js"></script>-->
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" type="text/css" href="../_vendor/css/bootswatch-paper.bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../_vendor/fonts/font-awesome/font-awesome.min.css"/>
+
+	<!-- Theme's CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Vendor JavaScript -->
+	<script src="../_vendor/js/jquery.min.js"></script>
+	<script src="../_vendor/js/popper.min.js"></script>
+	<script src="../_vendor/js/bootstrap.min.js"></script>
+	<script src="../_vendor/js/js.cookie.min.js"></script>
+
+	<!-- Theme JavaScript -->
+	<!--<script type="text/javascript" src="js/translations.js"></script>
+	<script type="text/javascript" src="js/greeter.js"></script>
+	-->
+	<script type="text/javascript" src="js/yak.js"></script>
+
+</head>
+<body>
+<div class="wallpaper">
+	<div class="container-fluid">
+		<div id="top-row" class="row">
+			<div id="button-box" class="col-md-4">
+			</div>
+			<div id="clock" class="col-md-8">
+			</div>
+		</div>
+		<div id="middle-row" class="row">
+		</div>
+		<div id="bottom-row" class="row">
+			<div id="login-box" class="col-md-4">
+				<div class="login-area">
+					<div class="hostname">
+						Yak:
+						<!--<span id="user-list", class="list-group"></span>
+						-->
+						<div class="dropup">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropup-button">
+							</button>
+							<ul class="dropdown-menu" id="user-list">
+							</ul>
+						</div>
+					</div>
+					<div class="password-area">
+						<div class='input-group'>
+							<input id='passwordField'  type='password' class="form-control">
+							<input id='loginField' class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id= "date" class="col-md-8">
+				<div class="date-area">
+
+					<div class="date-day">
+							<span id="day"></span> <span id='month'></span> <span id="year"></span> 
+					</div>
+					<div class="clock-clock">
+							<span id='hour'></span><br> <span id="minutes"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>

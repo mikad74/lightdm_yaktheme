@@ -1,0 +1,170 @@
+
+
+html, body {
+	height : 100%;
+	width : 100%;
+	background-color: #d2b283;
+}
+
+
+.wallpaper {
+	/*border : 2px solid green;*/
+	display : table;
+	height : 100%;
+	width : 100%;
+	background-image: url('file:///usr/share/backgrounds/Yak_1920x1080.png');
+	background-size : cover;
+	background-position: center;
+}
+
+.container-fluid{
+	height: 100%;
+}
+
+.login-area, .date-area{
+	height: 35%;
+	position: absolute;
+	bottom: 15pt;
+	/*border: 2px solid red;*/
+
+}
+.login-area{
+	width: 70%;
+	left: 15pt;
+	background-color: #3e4837;
+	border-radius: 7pt;
+	padding-top: 10pt;
+}
+
+.password-area {
+	color : #3e4837;
+	font-size : 20pt;
+	text-align: center;
+	display : row;
+	background-color: #f6f1ad;
+	width: 80%;
+	margin-top: 15px;
+	margin-left: 10%;
+	padding: 5pt;
+	border-radius: 7pt;
+	position: relative;
+}
+
+
+.test{
+	outline: none;
+}
+
+input[type="password"],
+input[type="password"]:focus,
+#passwordField,
+#loginField {
+	box-shadow: 0 0 0 rgba(0,0,0,1) inset, 0 0 0 rgba(0,0,0,1);
+	outline: 0 none;
+	text-align: center;
+}
+
+#passwordField, #loginField, .input-group{
+	height: 100%;
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	color : #3e4837;
+	outline: none;
+}
+
+.hostname{
+	color : #f6f1ad;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	display: row;
+	width: 80%;
+	margin-top: 15px;
+	margin-left: 10%;
+	position: relative;
+}
+
+.dropup {
+	display: inline;
+	padding-top: none;
+	padding-bottom: none;
+}
+
+#dropup-button{
+	font-size: 28px;
+	line-height: 28px;
+	color: #3e4837;
+	background-color: #f6f1ad;
+	text-transform: none;
+	padding-top: 4pt;
+	height: 30pt;
+	padding-bottom: 4pt;
+}
+
+#user-list{
+	color: #3e4837;
+	background-color: #f6f1ad;
+}
+
+
+.date-area{
+	width: 35%;
+	right: 15pt;
+}
+
+.date-day{
+	color: #2c3327;
+	font-size: 30pt;
+	line-height: 30pt;
+	font-style: italic;
+	text-align: right;
+	margin-bottom: 3pt;
+	position: absolute;
+	bottom: 125pt;
+	right: 0;
+}
+
+#day, #year{
+	color: #3e4837;
+}
+
+
+.clock-clock{
+	color: #3e4837;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 125pt;
+	width: 450pt;
+	font-size: 55pt;
+	line-height: 55pt;
+	font-style: italic;
+	text-align: right;
+	margin-right: -1%;
+	padding-right: 5pt;
+	border: 3pt solid #3e4837;
+	border-radius: 7pt;
+	display: table-cell;
+}
+
+#minutes{
+	color : #2c3327;
+}
+
+#top-row {
+	height: 35%;
+}
+
+#middle-row {
+	height : 5%;
+}
+
+#bottom-row {
+	height: 60%;
+}
+
+#button-box, #clock, #login-box, #date {
+	/*border: 2px solid red;*/
+	height: 100%;
+}
